@@ -14,7 +14,7 @@ services:
         aliases:
           - robotsever
     depends_on:
-      - cpservice
+      - jboss
     command: >
       /bin/bash -c "
         /run.sh
