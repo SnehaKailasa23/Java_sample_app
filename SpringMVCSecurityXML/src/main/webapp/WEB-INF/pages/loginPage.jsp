@@ -27,7 +27,7 @@
             <td><input type='text' name='username' value=''></td>
          </tr>
          <tr>
-            <td>PasswordPassWord:</td>
+            <td>Password:</td>
             <td><input type='password' name='password' /></td>
          </tr>
          <tr>
