@@ -1,4 +1,4 @@
-@Library('jbosslib')
+@Library('sample')
 node {
 	JBoss_Jenkinsfile(
 		remote_user: 'ec2-user',
