@@ -1,11 +1,26 @@
+@Library('jbosslib')
+node {
+	JBoss_Jenkinsfile(
+		remote_user: 'ec2-user',
+		remote_ip: '18.231.38.27',
+		deploy_script: '/home/ubuntu/remote_script.sh',
+		db_user_name: 'p3base',
+		db_password: 'p3base',
+		db_server: 'padlcicdggk4.sw.fortna.net:1521/FORTNAWCS'
+	)
+}
+
+
+
+
+/*********************** OLD VERSION OF JENKINSFILE
 def rtMaven = Artifactory.newMavenBuild()
 node {
 		try {
 			cleanWs()
-	/****************************** Git Checkout Stage ******************************/
 			stage ('Source Code Checkout') {
 				Reason = "GIT Checkout Failed"
-				checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/SnehaKailasa23/Java_sample_app.git']]]
+				checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/SnehaKailasa23/Java_sample_app.git']]]
 				//checkout scm
 			}
 			stage('Maven Build') {
@@ -31,3 +46,4 @@ node {
 			sh 'exit 1'
 		}
 	}
+*******************/
