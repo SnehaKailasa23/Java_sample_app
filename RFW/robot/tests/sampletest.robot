@@ -4,7 +4,7 @@ Resource          ../keywords/common.robot
 Library           DatabaseLibrary
 
 *** Variables ***
-${hostname}       cpserver
+${hostname}       jboss
 ${port}           6400
 ${uri}            /api/product/list
 ${dbConnectionStr}    'cicd_sample/cicd_sample@52.67.80.187:1521/GGKF'
