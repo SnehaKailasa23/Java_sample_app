@@ -3,10 +3,10 @@ DECLARE cnt NUMBER;
   BEGIN
     SELECT COUNT(*) INTO cnt FROM user_tables WHERE table_name = 'USERS';
     IF cnt <> 0 THEN
-      EXECUTE IMMEDIATE 'DROP TABLE sales';
+      EXECUTE IMMEDIATE 'DROP TABLE USERS';
     END IF;
     SELECT COUNT(*) INTO cnt FROM user_tables WHERE table_name = 'USER_ROLES';
     IF cnt <> 0 THEN
-      EXECUTE IMMEDIATE 'DROP TABLE sales';
+      EXECUTE IMMEDIATE 'DROP TABLE USER_ROLES';
     END IF;
   END;
