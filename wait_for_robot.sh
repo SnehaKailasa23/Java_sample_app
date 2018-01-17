@@ -1,5 +1,6 @@
 #!/bin/bash
 source .env
+echo "In Wait"
 Container_status=`docker ps | grep "$robot_container_name"`
 #echo $Container_status
 while [ -n "$Container_status" ]
