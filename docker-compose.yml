@@ -26,5 +26,8 @@ services:
       context: .
       dockerfile: Dockerfile
     image: ${jboss_image_name}
+    networks:
+      frontend:
+      
 networks:
   frontend:
