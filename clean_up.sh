@@ -18,7 +18,7 @@
 
 
 #!/bin/bash
-source .env
+. ./.env
 j=0
 for i in `grep -n "image_name" .env`; do
 Images[$j]=`cut -d '=' -f2 <<<$i`
