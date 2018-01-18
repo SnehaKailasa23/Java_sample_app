@@ -3,7 +3,7 @@ source .env
 Container_status=`docker ps | grep "$robot_container_name"`
 while [ -n "$Container_status" ]
 do
-  if [ $count -le 180 ] 
+  if [ $count -le 60 ] 
   then
     echo sleeping;
     sleep 5s;
