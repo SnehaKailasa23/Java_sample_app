@@ -1,24 +1,7 @@
-#Container_status=`docker ps -a | grep "jboss_container"`
-#Image_status=`docker ps -a | grep "jboss_application"`
-#if [ ! -z "$Image_status" ];
-#then
-#     docker rmi jboss_application -f
-#else
-#     echo "There is no container named jboss_container"
-#fi
-
-#if [ ! -z "$Container_status" ];
-#then
-#     docker rm jboss_container -f
-#else
-#     echo "There is no container named jboss_container"
-#fi
-
-
-
-
 #!/bin/bash
+echo "1st line"
 . ./.env
+echo "2nd line"
 j=0
 for i in `grep -n "image_name" .env`; do
 Images[$j]=`cut -d '=' -f2 <<<$i`
