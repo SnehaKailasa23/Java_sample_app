@@ -1,7 +1,5 @@
 #!/bin/bash
-echo "1st line"
-. ./.env
-echo "2nd line"
+source .env
 j=0
 for i in `grep -n "image_name" .env`; do
 Images[$j]=`cut -d '=' -f2 <<<$i`
