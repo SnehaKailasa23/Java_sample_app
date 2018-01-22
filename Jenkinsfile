@@ -6,7 +6,7 @@ node {
 		deploy_script: '/home/ubuntu/remote_script.sh',
 		db_user_name: 'p3base',
 		db_password: 'p3base',
-		db_server: 'padlcicdggk4.sw.fortna.net:1521/FORTNAWCS'
+		db_server: '*******'
 	)
 }
 
