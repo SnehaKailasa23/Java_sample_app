@@ -4,8 +4,8 @@ node {
 		remote_user: 'ec2-user',
 		remote_ip: '18.231.38.27',
 		deploy_script: '/home/ubuntu/remote_script.sh',
-		db_user_name: 'p3base',
-		db_password: 'p3base',
+		db_user_name: '*****',
+		db_password: '******',
 		db_server: '*******'
 	)
 }
