@@ -7,7 +7,8 @@ node {
 		db_user_name: '*****',
 		db_password: '******',
 		db_server: '*******',
-		success_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com'
+		success_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com',
+		failed_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com'
 	)
 }
 
