@@ -7,6 +7,8 @@ node {
 		db_user_name: '*****',
 		db_password: '******',
 		db_server: '*******',
+		snapshot_repo:'fortna_snapshot',
+		release_repo:'fortna_release',
 		success_recipients: 'sneha.kailasa@ggktech.com',
 		failed_recipients: 'sneha.kailasa@ggktech.com'
 	)
