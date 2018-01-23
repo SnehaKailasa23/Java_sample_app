@@ -14,7 +14,3 @@ do
     break
   fi
 done;
-echo "connected"
-if [ $count -ge 180 ]; then
-   docker stop $robot_container_name
-fi
