@@ -1,17 +1,11 @@
 @Library('sample') _
 node {
 	Jboss_JenkinsFile2(
-		remote_user: 'ec2-user',
-		remote_ip: '18.231.38.27',
 		ArtifactoryServerName:'server1',
-		deploy_script: '/home/ubuntu/remote_script.sh',
-		db_user_name: '*****',
-		db_password: '******',
-		db_server: '*******',
 		snapshot_repo:'fortna_snapshot',
 		release_repo:'fortna_release',
-		success_recipients: 'sneha.kailasa@ggktech.com',
-		failed_recipients: 'sneha.kailasa@ggktech.com'
+		success_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com',
+		failed_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com'
 	)
 }
 
