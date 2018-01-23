@@ -4,7 +4,7 @@ Container_status=`docker ps | grep "$robot_container_name"`
 count=0
 while [ -n "$Container_status" ]
 do
-  if [ "$count" -le 20 ] 
+  if [ "$count" -le 180 ] 
   then
     echo sleeping;
     sleep 5s;
@@ -15,6 +15,6 @@ do
   fi
 done;
 echo "connected"
-if [ $count -ge 20 ]; then
+if [ $count -ge 180 ]; then
    docker stop $robot_container_name
 fi
