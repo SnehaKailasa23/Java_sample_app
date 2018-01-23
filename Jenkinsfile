@@ -6,7 +6,8 @@ node {
 		deploy_script: '/home/ubuntu/remote_script.sh',
 		db_user_name: '*****',
 		db_password: '******',
-		db_server: '*******'
+		db_server: '*******',
+		success_recipients: 'yerriswamy.konanki@ggktech.com, sunil.boga@ggktech.com'
 	)
 }
 
